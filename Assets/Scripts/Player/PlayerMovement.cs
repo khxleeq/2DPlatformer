@@ -1,8 +1,9 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]private float speed;
+    [SerializeField] private float speed;
     [SerializeField] private float jumpPower;
     [SerializeField]private LayerMask groundLayer;
     [SerializeField] private LayerMask wallLayer;
@@ -54,6 +55,17 @@ public class PlayerMovement : MonoBehaviour
         else
             wallJumpCooldown += Time.deltaTime;
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+       if(collision.tag == "Powerup")
+        {
+            Destroy(collision.gameObject);
+            speed = 18f;
+            GetComponent <SpriteRenderer>().color = Color.cyan;
+            StartCoroutine(ResetPowerUp());
+        }
+    }
+
 
     private void Jump()
     {
@@ -91,5 +103,13 @@ public class PlayerMovement : MonoBehaviour
     public bool canAttack()
     {
         return horizontalInput == 0 && isGrounded() && !onWall();
+    }
+
+    private IEnumerator ResetPowerUp()
+    {
+        yield return new WaitForSeconds(5);
+        speed = 8f;
+        GetComponent<SpriteRenderer>().color = Color.white;
+
     }
 }
