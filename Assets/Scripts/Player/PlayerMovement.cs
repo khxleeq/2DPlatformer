@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-       if(collision.tag == "Powerup")
+       if(collision.tag == "speedPowerup")
         {
             Destroy(collision.gameObject);
             speed = 18f;
