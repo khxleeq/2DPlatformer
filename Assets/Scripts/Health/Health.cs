@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -7,7 +8,8 @@ public class Health : MonoBehaviour
     [SerializeField] private float startingHealth;
     public float currentHealth { get; private set; }
     private Animator anim;
-    private bool dead;
+    public bool dead;
+    public bool isPlayer;
 
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
@@ -45,9 +47,17 @@ public class Health : MonoBehaviour
                     component.enabled = false;
 
                 dead = true;
-            }
+
+                if (isPlayer == true)
+                {
+                    SceneManager.LoadScene("GameOver");
+                }
+           }
         }
     }
+
+  
+  
     public void AddHealth(float _value)
     {
         currentHealth = Mathf.Clamp(currentHealth + _value, 0, startingHealth);

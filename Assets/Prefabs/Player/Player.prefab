@@ -181,6 +181,12 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  attackRange: 1.15
+  lightAttackDmg: 2
+  attackDmg: 3
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 2048
 --- !u!114 &451890957677485568
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,6 +200,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 5
+  dead: 0
+  isPlayer: 1
   iFramesDuration: 2
   numberOfFlashes: 3
   components:

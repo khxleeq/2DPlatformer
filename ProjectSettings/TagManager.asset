@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Enemy
   - speedPowerup
+  - fireRatePowerup
+  - Block
   layers:
   - Default
   - TransparentFX
@@ -20,7 +22,7 @@ TagManager:
   - Wall
   - Player
   - Enemy
-  - 
+  - Boss
   - 
   - 
   - 

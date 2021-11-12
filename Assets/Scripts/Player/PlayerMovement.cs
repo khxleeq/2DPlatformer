@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
+
     }
 
     private void Update()
@@ -60,12 +62,18 @@ public class PlayerMovement : MonoBehaviour
        if(collision.tag == "speedPowerup")
         {
             Destroy(collision.gameObject);
-            speed = 18f;
+            speed = 20f;
             GetComponent <SpriteRenderer>().color = Color.cyan;
             StartCoroutine(ResetPowerUp());
         }
-    }
 
+        if (collision.tag == "dmgIncreasePowerup")
+        {
+            
+            Destroy(collision.gameObject);
+
+        }
+    }
 
     private void Jump()
     {
