@@ -35,7 +35,7 @@ public class MeleeEnemy : MonoBehaviour
         cooldownTimer += Time.deltaTime;
 
         //Attack only when player in sight?
-        if (PlayerOnSight())
+        if (PlayerInSight())
         {
             if (cooldownTimer >= attackCooldown)
             {
@@ -45,7 +45,7 @@ public class MeleeEnemy : MonoBehaviour
         }
 
         if (enemyPatrol != null)
-            enemyPatrol.enabled = !PlayerOnSight();
+            enemyPatrol.enabled = !PlayerInSight();
     }
 
     private void RangedAttack()
@@ -64,7 +64,7 @@ public class MeleeEnemy : MonoBehaviour
         return 0;
     }
 
-    private bool PlayerOnSight()
+    private bool PlayerInSight()
     {
         RaycastHit2D hit =
             Physics2D.BoxCast(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
@@ -85,7 +85,7 @@ public class MeleeEnemy : MonoBehaviour
 
     private void DamagePlayer()
     {
-        if (PlayerOnSight())
+        if (PlayerInSight())
             playerHealth.TakeDamage(damage);
     }
 }

@@ -62,17 +62,13 @@ public class PlayerMovement : MonoBehaviour
        if(collision.tag == "speedPowerup")
         {
             Destroy(collision.gameObject);
-            speed = 20f;
+            speed = 14f;
+            jumpPower = 22f;
             GetComponent <SpriteRenderer>().color = Color.cyan;
             StartCoroutine(ResetPowerUp());
         }
 
-        if (collision.tag == "dmgIncreasePowerup")
-        {
-            
-            Destroy(collision.gameObject);
-
-        }
+     
     }
 
     private void Jump()
@@ -110,13 +106,15 @@ public class PlayerMovement : MonoBehaviour
     }
     public bool canAttack()
     {
-        return horizontalInput == 0 && isGrounded() && !onWall();
+        return horizontalInput == 0 && !onWall();
     }
 
     private IEnumerator ResetPowerUp()
     {
         yield return new WaitForSeconds(5);
         speed = 8f;
+        jumpPower = 20f;
+
         GetComponent<SpriteRenderer>().color = Color.white;
 
     }

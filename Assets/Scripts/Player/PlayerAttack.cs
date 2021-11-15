@@ -36,14 +36,13 @@ public class PlayerAttack : MonoBehaviour
     {
         if (Input.GetMouseButton(0) && cooldownTimer > attackCooldown && playerMovement.canAttack())
             Attack();
-
-        cooldownTimer += Time.deltaTime;
-
         if (Input.GetMouseButton(1) && playerMovement.canAttack())
             LightSwordAttack();
-
         if (Input.GetKey(KeyCode.Z) && playerMovement.canAttack())
             AttackSword();
+        cooldownTimer += Time.deltaTime;
+
+        
 
 
     }
@@ -114,7 +113,7 @@ public class PlayerAttack : MonoBehaviour
     private IEnumerator ResetPowerUp()
     {
         yield return new WaitForSeconds(5);
-        attackCooldown = 3f;
+        attackCooldown = 1f;
         GetComponent<SpriteRenderer>().color = Color.white;
 
     }

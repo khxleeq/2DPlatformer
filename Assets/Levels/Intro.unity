@@ -164,17 +164,18 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
     m_FontSize: 30
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Is he strong enough to finally avenge his village? Let's find out ...
+  m_Text: "Do you have what it takes to avenge your village? \n\nKill all knights
+    and their flying monster!"
 --- !u!222 &68822186
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -447,21 +448,22 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
     m_FontSize: 30
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'However.. they made a terrible mistake.. they left a baby.. who grew up
-    wanting revenge!
+  m_Text: 'Few centuries ago, the knights and their flying monster stormed the village
+    killing everyone they found.
 
 
-    Now this baby is a old enough to take it!'
+
+'
 --- !u!222 &943013285
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -530,18 +532,18 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
     m_FontSize: 30
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Few decades ago.. the Dragon Warrior and his knights massacred a village 
-    of pyromancers.. '
+  m_Text: There was a village far far away from the civilasation... The people of
+    this village posessed a unique gift... They could command fire at their own will!
 --- !u!222 &1045493812
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -686,10 +688,10 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
     m_FontSize: 30
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -765,17 +767,21 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 8a2b9e2a607dd2143b58c44bc32410b4, type: 3}
     m_FontSize: 30
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 3
-    m_MaxSize: 40
+    m_MinSize: 0
+    m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'He is on his journey to find the Wicked Knight and avenge his village.
+  m_Text: 'But.. one young boy ran away and escaped this massacre of his village.
+    He grew up with one goal: To avenge this village
+
+
+    This boy is YOU!
 
 '
 --- !u!222 &1368164273
@@ -856,7 +862,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 2
-  m_Text: PYRO NINJA
+  m_Text: PYRO BOY
 --- !u!222 &1487473783
 CanvasRenderer:
   m_ObjectHideFlags: 0

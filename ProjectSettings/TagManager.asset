@@ -9,6 +9,7 @@ TagManager:
   - speedPowerup
   - fireRatePowerup
   - Block
+  - Platform
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - Wall
   - Player
   - Enemy
-  - Boss
+  - 
   - 
   - 
   - 
@@ -54,6 +55,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2016983551
+    locked: 0
+  - name: Boss
+    uniqueID: 1874502857
     locked: 0
   - name: Ground
     uniqueID: 110149435

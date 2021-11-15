@@ -10,6 +10,8 @@ public class Health : MonoBehaviour
     private Animator anim;
     public bool dead;
     public bool isPlayer;
+    public bool isBoss;
+    public GameObject barrier;
 
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
@@ -52,9 +54,18 @@ public class Health : MonoBehaviour
                 {
                     SceneManager.LoadScene("GameOver");
                 }
-           }
+
+                if (isBoss == true)
+                {
+                    Destroy(barrier);
+                    Destroy(gameObject);
+                }
+
+
+            }
         }
     }
+
 
   
   

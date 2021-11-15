@@ -13,10 +13,10 @@ EditorBuildSettings:
     guid: 22d3d52c8f7adc445a59fe52ba77982b
   - enabled: 1
     path: Assets/Levels/Level1.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: ccf8bd1131e203e45887e4856980cf21
   - enabled: 1
     path: Assets/Levels/Level2.unity
-    guid: 91a29d3f84cfb9040825df4a67a0417a
+    guid: 295ffd7141761af4792ad506f8788738
   - enabled: 1
     path: Assets/Levels/Level3.unity
     guid: 5114302cf016b024ea98ebef3d7989e0
@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/GameOver.unity
     guid: 505f088b978e8e741a2619cbcaad43e8
+  - enabled: 1
+    path: Assets/Levels/ControlsMenu.unity
+    guid: 764b27a7ea598be45b621ef2f2e0052a
   m_configObjects: {}
