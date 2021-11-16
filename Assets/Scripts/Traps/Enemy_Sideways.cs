@@ -9,7 +9,7 @@ public class Enemy_Sideways : MonoBehaviour
     [SerializeField] private float damage;
 
     private bool movingLeft;
-        private float leftEdge;
+    private float leftEdge;
     private float rightEdge;
 
     private void Awake()

@@ -12,6 +12,8 @@ public class Health : MonoBehaviour
     public bool isPlayer;
     public bool isBoss;
     public GameObject barrier;
+    public AudioClip hurt;
+    AudioSource playerAS;
 
     [Header("iFrames")]
     [SerializeField] private float iFramesDuration;
@@ -22,11 +24,13 @@ public class Health : MonoBehaviour
     [SerializeField] private Behaviour[] components;
     private bool invulnerable;
 
+  
     private void Awake()
     {
         currentHealth = startingHealth;
         anim = GetComponent<Animator>();
         spriteRend = GetComponent<SpriteRenderer>();
+        playerAS = GetComponent<AudioSource>();
     }
     public void TakeDamage(float _damage)
     {
@@ -35,6 +39,9 @@ public class Health : MonoBehaviour
 
         if (currentHealth > 0)
         {
+            playerAS.clip = hurt;
+            playerAS.Play();
+            playerAS.PlayOneShot(hurt);
             anim.SetTrigger("hurt");
             StartCoroutine(Invunerability());
         }
