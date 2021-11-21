@@ -174,8 +174,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: "Do you have what it takes to avenge your village? \n\nKill all knights
-    and their flying monster!"
+  m_Text: "Do you have what it takes to avenge your village? \n\nKill all evil knights
+    and the flying monster!"
 --- !u!222 &68822186
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -458,8 +458,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Few centuries ago, the knights and their flying monster stormed the village
-    killing everyone they found.
+  m_Text: 'Few centuries ago, the  evil knights and the flying monster stormed the
+    village killing everyone they found.
 
 
 
@@ -542,7 +542,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: There was a village far far away from the civilasation... The people of
+  m_Text: There was a village far far away from the civilization... The people of
     this village posessed a unique gift... They could command fire at their own will!
 --- !u!222 &1045493812
 CanvasRenderer:
